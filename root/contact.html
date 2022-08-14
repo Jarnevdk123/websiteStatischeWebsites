@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <title>Jarne VDK | Contact</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="img/favicon.png">
+        <link rel="stylesheet" href="vendor/bootstrap.min.css">
+        <link rel="stylesheet" href="css/contact.css">
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="https://kit.fontawesome.com/83fbc844cd.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <img src="img/favicon.png" alt="Jarne VDK" title="JarneVDK" class="navbar-brand navbar-img">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="index.html" class="nav-item nav-link">Start</a>
+                        <a href="cv.html" class="nav-item nav-link">CV</a>
+                        <a href="hobby.html" class="nav-item nav-link">Hobby</a>
+                        <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="py-5 mb-4 jumbotron">
+            <div class="container">
+                <h1>Contacteer me!</h1>
+                <p class="lead">Bij interesse kan je me altijd bereiken via de onderstaande contactgegevens. Hier vind je ook andere belangrijke informatie.</p>
+                <p class="lead">Je kan daarnaast zelf je contactgegevens doorsturen en eventueel bijkomende vragen stellen via de form.</p>
+                <p class="lead">Ik kijk alvast uit naar onze samenwerking!</p>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="container contact">
+                <h1 class="padding">Jarne Van de Kerkhof</h1>
+                <div class="grid-container">
+                    <div><i class="fa-solid fa-house fa-4x"></i></div>
+                    <div><i class="fa-solid fa-graduation-cap fa-4x"></i></div>
+                    <div><i class="fa-solid fa-square-envelope fa-4x"></i></div>
+                    <div><i class="fa-solid fa-mobile-screen-button fa-4x"></i></div>
+                    <div><i class="fa-brands fa-linkedin fa-4x"></i></div>
+                    <div>Secretaris Van de Venlaan 32 <br> 2350 Vosselaar</div>
+                    <div>Graduaat Programmeren</div>
+                    <div><a href="mailto: jarnevdk@gmail.com">jarnevdk@gmail.com</a></div>
+                    <div><a href="tel: +32468249643">+32 468 24 96 43</a></div>
+                    <div><a href="https://www.linkedin.com/in/jarne-van-de-kerkhof-9977761a3/">LinkedIn</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <form action="form.php" method="get">
+                <div>
+                    <label for="voornaam">Voornaam <input type="text" name="voornaam" id="voornaam" required></label>
+                </div>
+                <div>
+                    <label for="achternaam">Familienaam <input type="text" name="achternaam" id="achternaam" required></label>
+                </div>
+                <div>
+                    <label for="email">E-mail <input type="email" name="email" id="email" required></label>
+                </div>
+                <div>
+                    <label for="skills">Interesse Skills 
+                        <select name="skills" id="skills" multiple>
+                            <option value=".NET">.NET</option>
+                            <option value="C#">C#</option>
+                            <option value="HTML/CSS">HTML/CSS</option>
+                            <option value="Unity">Unity</option>
+                            <option value="Javascript">Javascript</option>
+                            <option value="SQL">SQL</option>
+                            <option value="Bootstrap">Bootstrap</option>
+                        </select>
+                    </label>
+                </div>
+                <div>
+                    <label for="vraag">Vragen? <textarea name="vraag" id="vraag" rows="10"></textarea></label>
+                </div>
+                <input type="submit" value="Verzenden" class="button">
+                
+            </form>
+        </div>
+        <footer>
+            <div class="row">
+                <div class="column75">
+                    &copy; Van de Kerkhof Jarne
+                </div>
+                <div class="column-rest">
+                    <a href="https://www.facebook.com/jarne.vandekerkhof" target="_blank"><i class="fa-brands fa-facebook icon fa-2x"></i></a>
+                    <a href="https://www.instagram.com/jarne_van_de_kerkhof/" target="_blank"><i class="fa-brands fa-square-instagram fa-2x"></i></a>
+                    <a href="https://twitter.com/SmashyYT" target="_blank"><i class="fa-brands fa-square-twitter fa-2x"></i></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
